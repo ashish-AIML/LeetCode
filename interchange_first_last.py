@@ -1,13 +1,16 @@
+#approach 1
+# def swapList(newList):
+#     size = len(newList)
+#     temp = newList[-1]
+#     newList[-1] = newList[0]
+#     newList[0] = temp
 
+#     return newList
+
+#approach 2
 def swapList(newList):
-    size = len(newList)
-    temp = newList[-1]
-    newList[-1] = newList[0]
-    newList[0] = temp
-
+    newList[0], newList[-1] = newList[-1], newList[0]
     return newList
-
-
 
 
 
