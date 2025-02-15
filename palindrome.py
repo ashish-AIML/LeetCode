@@ -39,3 +39,14 @@ def isPalindrome(x):
 
 x = 'abc'
 isPalindrome(x)
+
+
+# solution 3
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+         x = str(x)  # Convert integer to string
+         return x == x[::-1]  # Check if reversed string is equal to original
+
+solution = Solution()  # Create an instance of Solution class
+x = 121
+print(solution.isPalindrome(x))  
